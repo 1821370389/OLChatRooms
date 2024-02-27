@@ -72,31 +72,31 @@ int ChatRoomOLInit();
 int ChatRoomOLExit();
 
 /* 聊天室注册 */
-int ChatRoomOLRegister(int fd);
+int ChatRoomOLRegister(int sockfd);
 
 /* 聊天室登录 */
-int ChatRoomOLLogin(int fd);
+int ChatRoomOLLogin(int sockfd);
 
 /* 添加好友 */
-int ChatRoomOLAddFriend(int fd, const char *name);
+int ChatRoomOLAddFriend(int sockfd, const char *name);
 
 /* 显示好友 */
-int ChatRoomOLShowFriend(int fd);
+int ChatRoomOLShowFriend(int sockfd);
 
 /* 删除好友 */
-int ChatRoomOLDelFriend(int fd, const char *name);
+int ChatRoomOLDelFriend(int sockfd, const char *name);
 
 /* 私聊 */
-int ChatRoomOLPrivateChat(int fd, const char *name);
+int ChatRoomOLPrivateChat(int sockfd, const char *name);
 
 /* 发起群聊 */
-int ChatRoomOLAddGroupChat(int fd, const char *name);
+int ChatRoomOLAddGroupChat(int sockfd, const char *name);
 
 /* 群聊 */
-int ChatRoomOLGroupChat(int fd, const char *name);
+int ChatRoomOLGroupChat(int sockfd, const char *name);
 
 /* 退出群聊 */
-int ChatRoomOLExitGroupChat(int fd, const char *name);
+int ChatRoomOLExitGroupChat(int sockfd, const char *name);
 
 
 #endif // __CHAT_ROOM_OL_H__
